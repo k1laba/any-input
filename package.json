@@ -1,6 +1,6 @@
 {
   "name": "any-input",
-  "version": "0.0.4",
+  "version": "0.1.0",
   "description": "text input language converter",
   "author": "k1laba",
   "main": "dist/index.js",

@@ -1,11 +1,14 @@
-import { Component, h } from "@stencil/core";
+import { Component, h, Prop } from "@stencil/core";
 
 @Component({
     tag: 'geo-input'
 })
 export class GeoInput {
+    
+    @Prop() disabled: boolean = false;
+    
     render() {
-        return (<any-input letters="abgdevzTiklmnopJrstufqRySCcZwWxjh" targetFirstLetter="ა">
+        return (<any-input disabled={this.disabled} letters="abgdevzTiklmnopJrstufqRySCcZwWxjh" targetFirstLetter="ა">
             <slot />
         </any-input>)
     }

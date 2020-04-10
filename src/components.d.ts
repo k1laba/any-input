@@ -12,6 +12,7 @@ export namespace Components {
         "targetFirstLetter": string;
     }
     interface GeoInput {
+        "disabled": boolean;
     }
 }
 declare global {
@@ -39,6 +40,7 @@ declare namespace LocalJSX {
         "targetFirstLetter": string;
     }
     interface GeoInput {
+        "disabled"?: boolean;
     }
     interface IntrinsicElements {
         "any-input": AnyInput;
