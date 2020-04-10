@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0">
+  <title>Stencil Component Starter</title>
+
+  <script type="module" src="/build/any-input.esm.js"></script>
+  <script nomodule src="/build/any-input.js"></script>
+
+  <style>
+    textarea {
+      margin-top: 20px;
+    }
+
+    .container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    .box {
+      width: 250px;
+    }
+    .box * {
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="box">
+      <p>any-input with input and textarea</p>
+      <any-input letters="abgdevzTiklmnopJrstufqRySCcZwWxjh" target-first-letter="ა">
+        <input type="text" />
+        <div>
+          <textarea></textarea>
+        </div>
+      </any-input>
+    </div>
+    <div class="box">
+      <p>disabled any-input</p>
+      <any-input disabled="true" letters="abgdevzTiklmnopJrstufqRySCcZwWxjh" target-first-letter="ა">
+        <input type="text" />
+      </any-input>
+    </div>
+    <div class="box">
+      <p>geo-input</p>
+      <geo-input>
+        <input type="text" />
+      </geo-input>
+    </div>
+  </div>
+</body>
+</html>
